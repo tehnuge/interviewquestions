@@ -19,10 +19,8 @@ function longestPal(str){
 		for (var j = str.length; j >=0; j--){
 			current = str.slice(i,j)
 			if(isPal(current)){
-				//console.log("curlength: "+current.length)
 				if(current.length > maxLen){
 					maxLen=current.length
-					//console.log("maxlen upda: "+ maxLen)
 				}
 			}
 		}
