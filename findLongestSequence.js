@@ -7,19 +7,15 @@ function find_seq(arr){
 	var current = arr[0]
 	var curLen = 1
 	for(var i = 1; i < arr.length; i++){
-
 		if(arr[i] === current){
 			curLen++
 		}
-		else{
-			if(curLen > maxLen){
-				maxLen = curLen
-			}
-			current = arr[i]
-			curLen = 1
-		}
 		if(curLen > maxLen){
 			maxLen = curLen
+		}
+		if(arr[i]!==current){
+			current = arr[i]
+			curLen = 1
 		}
 	}
 	return maxLen
