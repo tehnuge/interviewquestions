@@ -1,4 +1,4 @@
-//function that finds the longest sequence of consecutive numbers in an array
+//Function that finds the longest sequence of consecutive numbers in an array
 function find_seq(arr){
 	if(arr.length === 1){
 		return 1
