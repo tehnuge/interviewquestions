@@ -5,13 +5,15 @@ function deleteDuplicates(str){
 	for(var i =0; i< list.length; i++){
 		var temp = list[i].match(/\d+/)
 		var val = list[i].match(/[a-z]+/)
-
-		if(result[temp] === undefined || val.length > result[temp][0].length){			
+		console.log(val)
+		//console.log("i:" + i + " " + val.length)
+		if(result[temp] === undefined || val[0].length > result[temp][0].length){			
 			result[temp] = val	
-			console.log(val)
+			console.log("i:" + i + " " + result[temp][0].length)
+			//console.log(val)
 		}
 	}
 return result
 }
 
-deleteDuplicates("12312415:apple\n324324234:orange\n12312415:applet")
+deleteDuplicates("12312415:apple\n324324234:orange\n12312415:applet, dfasd")
